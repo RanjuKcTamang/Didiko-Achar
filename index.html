@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif+Devanagari:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
   :root{
@@ -54,10 +54,13 @@
   }
 
   h1,h2,h3,h4{
-    font-family:'Fraunces', serif;
+    font-family:'Fraunces', 'Noto Serif Devanagari', serif;
     font-weight:600;
     color:var(--ink);
     line-height:1.05;
+  }
+  h1[lang="ne"], h2[lang="ne"], h3[lang="ne"], h4[lang="ne"]{
+    line-height:1.5;
   }
 
   a{color:inherit; text-decoration:none;}
@@ -124,9 +127,9 @@
   }
   .brand-text{display:flex; flex-direction:column; line-height:1.1;}
   .brand-text .name{
-    font-family:'Fraunces', serif;
+    font-family:'Noto Serif Devanagari', 'Fraunces', serif;
     font-weight:700;
-    font-size:1.25rem;
+    font-size:1.2rem;
     letter-spacing:0.01em;
   }
   .brand-text .dev{
@@ -211,12 +214,17 @@
   }
   .hero h1{
     font-size:clamp(2.6rem, 5.4vw, 4.4rem);
-    margin:18px 0 20px;
+    margin:34px 0 20px;
   }
   .hero h1 em{
     font-style:italic;
     color:var(--chili);
     font-weight:500;
+  }
+  .hero h1 .np-em{
+    font-style:normal;
+    color:var(--chili);
+    font-weight:700;
   }
   .hero p.lead{
     font-size:1.12rem;
@@ -310,6 +318,7 @@
   .story-frame img{width:100%; aspect-ratio:4/5; object-fit:cover;}
   .story h2{
     font-size:clamp(1.9rem,3.4vw, 2.6rem);
+    margin-top:20px;
     margin-bottom:22px;
   }
   .story p{color:var(--ink-soft); margin-bottom:16px; max-width:56ch;}
@@ -642,7 +651,7 @@
       </div>
       <div>
         <span class="eyebrow">The Story</span>
-        <h2>घरको भान्सा, उही घरकै शैलीमा।</h2>
+        <h2 lang="ne">घरको भान्सा, उही घरकै शैलीमा।</h2>
         <p>Didiko Achar started the way most good achar does &mdash; in a home kitchen, in small jars, shared with neighbours and family in Abu Dhabi. Mustard seed, dried red chili, garlic, ginger, cumin, Coriander
  and oil, worked in by hand and left to settle into flavor.</p>
         <p>Every jar is made to order in small batches, so what reaches you is close to what would come out of a home kitchen in Nepal &mdash; not a factory line.</p>
